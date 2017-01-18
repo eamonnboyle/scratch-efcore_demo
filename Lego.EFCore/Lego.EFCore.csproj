@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <OutputType>exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="**\*.cs" />
+    <EmbeddedResource Include="**\*.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.0-preview4-final" />
+    <PackageReference Include="Microsoft.NETCore.App" Version="1.0.1" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="1.1.1-prerelease-10009" />
+    <PackageReference Include="System.ValueTuple" Version="4.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lego.Shared\Lego.Shared.csproj" />
+  </ItemGroup>
+</Project>
